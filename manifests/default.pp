@@ -2,6 +2,7 @@ $wordpress_path = '/srv/www/wordpress'
 $wordpress_user = 'wordpress'
 $wordpress_passwd = 'abc123'
 $database_name = 'wordpress'
+$document_root = '/vagrant'
 
 include apache
 include php

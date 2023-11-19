@@ -17,13 +17,12 @@ Vagrant.configure("2") do |config|
     sudo dpkg -i puppet7-release-focal.deb
 		sudo apt-get update
     sudo apt-get install -y puppetserver puppet-agent
-    /opt/puppetlabs/bin/puppet module install puppetlabs-mysql
    SHELL
    
    config.vm.provision "puppet" do |puppet|
     puppet.module_path = "modules"        
-    puppet.manifests_path = "manifests"   # Default
-    puppet.manifest_file = "default.pp"   # Default
+    puppet.manifests_path = "manifests"
+    puppet.manifest_file = "default.pp"  
   end
 
 end
