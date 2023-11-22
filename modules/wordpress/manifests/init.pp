@@ -55,4 +55,5 @@ class wordpress {
       wptitle       => 'the title is to deploy WordPress with puppet',
     }
   }
+
 }
